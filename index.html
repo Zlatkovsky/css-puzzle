@@ -10,31 +10,38 @@
   <body>
     <div class="ui-framework-item container">
       <h1>A fun CSS Puzzle!</h1>
-      <p>
+      <div>
         This is a simple HTML page demonstrating a CSS puzzle. The root div has two classes applied to it:
-        <code>&lt;div class="ui-framework-item container"&gt;</code>
-      </p>
-      <p>
-        The <code>ui-framework-item</code> class has a simple rule: <code>{ padding: 10px }</code>.
-        Meanwhile, the <code>container</code> class overrides the padding for three of the sides:
+        <pre>
+          &lt;div class="ui-framework-item container"&gt;
+        </pre>
+      </div>
+      <div>
+        The <code>ui-framework-item</code> class has a simple rule: <code>{ padding: 20px }</code>. Meanwhile, the
+        <code>container</code> class overrides the padding for three of the sides:
         <pre>
           padding-left: 150px;
           padding-right: 150px;
-          padding-bottom: 30px;
         </pre>
-      </p>
-      <p>
-        When the dynamic content is loaded, it also defined a <code>ui-framework-item</code> class,
-        but because they use the same pretend UI framework, it's the exact same rule:
+      </div>
+      <div>
+        When the dynamic content is loaded, it also defined a <code>ui-framework-item</code> class, but because they use
+        the same pretend UI framework, it's the exact same rule:
         <pre>
-          { padding: 10px }
+          { padding: 20px }
         </pre>
-      </p>
-      <button id="load" class="ui-framework-item">Load component</button>
+      </div>
+      <button id="load">Load component</button>
 
       <div id="dynamic-content"></div>
 
-      <a id="what-happened-link" href="./what-happened.html" target="_blank">What happened?</a>
+      <a
+        id="what-happened-link"
+        href="https://github.com/Zlatkovsky/css-puzzle/blob/main/EXPLANATION.md"
+        target="_blank"
+      >
+        What happened?
+      </a>
     </div>
 
     <script src="./index.js"></script>

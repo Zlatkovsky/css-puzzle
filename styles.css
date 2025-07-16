@@ -1,11 +1,10 @@
 .ui-framework-item {
-  padding: 10px;
+  padding: 20px;
 }
 
 .container {
   padding-left: 150px;
   padding-right: 150px;
-  padding-bottom: 30px;
 
   background: white;
   border-radius: 8px;
@@ -22,4 +21,19 @@ body {
 #what-happened-link {
   display: none;
   margin-top: 20px;
+}
+
+.container div {
+  margin-bottom: 1em;
+}
+
+.container button {
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.container pre {
+  white-space: pre-line;
+  margin-left: 40px;
 }
