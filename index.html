@@ -17,8 +17,11 @@
         </pre>
       </div>
       <div>
-        The <code>ui-framework-item</code> class has a simple rule: <code>{ padding: 20px }</code>. Meanwhile, the
-        <code>container</code> class overrides the padding for three of the sides:
+        The <code>ui-framework-item</code> class has a simple rule:
+        <pre>
+          padding: 20px;
+        </pre>
+        Meanwhile, the <code>container</code> class overrides the padding for three of the sides:
         <pre>
           padding-left: 150px;
           padding-right: 150px;
@@ -28,7 +31,7 @@
         When the dynamic content is loaded, it also defined a <code>ui-framework-item</code> class, but because they use
         the same pretend UI framework, it's the exact same rule:
         <pre>
-          { padding: 20px }
+          padding: 20px;
         </pre>
       </div>
       <button id="load">Load component</button>
