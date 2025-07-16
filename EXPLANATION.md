@@ -47,4 +47,6 @@ Because `padding` is a shorthand property, it really stands for:
 }
 ```
 
-And it thus ends up overriding the `container`'s request for left and right properties being `150px`.
+And it thus ends up overriding the `container`'s request for left and right properties being `150px`:
+
+![Screenshot from DevTools](.images/screenshot.png)
