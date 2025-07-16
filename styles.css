@@ -5,17 +5,19 @@
 .container {
   padding-left: 150px;
   padding-right: 150px;
-
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 20px;
 }
 
 /* Other styles, not relevant for the demo: */
 
 body {
   font-family: "Arial", "Helvetica", sans-serif;
+}
+
+body > div {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
 #what-happened-link {
