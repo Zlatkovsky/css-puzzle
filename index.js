@@ -1,8 +1,10 @@
 const loadButton = document.getElementById("load");
 
-loadButton.addEventListener("click", addDynamicContent);
+loadButton.addEventListener("click", onLoadButtonClicked);
 
-function addDynamicContent() {
+function onLoadButtonClicked() {
+  loadButton.setAttribute("disabled", "disabled");
+
   const script = document.createElement("script");
   script.src = "./dynamic.js";
   script.onload = () => {
@@ -10,5 +12,7 @@ function addDynamicContent() {
   };
   document.head.appendChild(script);
 
-  loadButton.removeEventListener("click", addDynamicContent);
+  loadButton.removeEventListener("click", onLoadButtonClicked);
+
+  document.getElementById("what-happened-link").style.display = "block";
 }
